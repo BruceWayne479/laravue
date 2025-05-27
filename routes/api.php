@@ -3,9 +3,9 @@
 use App\Http\Resources\UserResource;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use \App\Laravue\Faker;
-use \App\Laravue\JsonResponse;
-use \App\Laravue\Acl;
+use App\Laravue\Faker;
+use App\Laravue\JsonResponse;
+use App\Laravue\Acl;
 
 /*
 |--------------------------------------------------------------------------
@@ -70,6 +70,7 @@ Route::get('/orders', function () {
             'order_no' => 'LARAVUE' . mt_rand(1000000, 9999999),
             'price' => mt_rand(10000, 999999),
             'status' => Faker::randomInArray(['success', 'pending']),
+//            'status' => ['success', 'pending'][mt_rand(0,1)],
         ];
 
         $data[] = $row;

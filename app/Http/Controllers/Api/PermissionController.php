@@ -48,7 +48,7 @@ class PermissionController extends BaseController
      */
     public function show($id)
     {
-        //
+        return response();
     }
 
     /**

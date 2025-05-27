@@ -3,8 +3,8 @@
     <div class="login-container">
       <div class="login-image" :style="{ 'background-image': 'url(' + loginBackground + ')' }">
         <div class="photo-credit">
-          <h4>Danang - Vietnam</h4>
-          <span>Photo by Kiril Dobrev on Unsplash</span>
+          <h4>威尼斯潟湖中的三角洲, 意大利</h4>
+          <span>(© Dimitri Weber/Amazing Aerial Agency)</span>
         </div>
       </div>
       <div class="login-content">
@@ -62,7 +62,7 @@ import LangSelect from '@/components/LangSelect';
 import { validEmail } from '@/utils/validate';
 import { csrf } from '@/api/auth';
 import logo from '@/assets/login/logo.png';
-import loginBackground from '@/assets/login/login_background.jpg';
+import loginBackground from '@/assets/login/login_background2.jpg';
 
 export default {
   name: 'Login',
@@ -166,14 +166,14 @@ $light_gray:#eee;
     width: 85%;
     input {
       background: transparent;
-      border: 0px;
+      border: 0;
       -webkit-appearance: none;
-      border-radius: 0px;
+      border-radius: 0;
       padding: 12px 5px 12px 15px;
       color: $light_gray;
       height: 47px;
       &:-webkit-autofill {
-        -webkit-box-shadow: 0 0 0px 1000px $bg inset !important;
+        -webkit-box-shadow: 0 0 0 1000px $bg inset !important;
         -webkit-text-colorfill-color: rgb(8, 7, 7) !important;
       }
     }
@@ -275,7 +275,7 @@ $textColor:#eee;
       .title {
         font-size: 24px;
         color: $textColor;
-        margin: 0px auto 10px auto;
+        margin: 0 auto 10px auto;
         text-align: left;
         font-weight: bold;
       }
